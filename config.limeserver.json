@@ -1,0 +1,27 @@
+{
+  "mongodb": {
+    "url": "mongodb://mongodb-for-lime:27017/documentsdb",
+      "collections": {
+        "users": "dev_users"
+      }
+  },
+  "filesystem": {
+    "documents": "../data/documents/"
+  },
+  "users": {
+    "shared_folders": [
+      "/shared/"
+    ]
+  },
+  "existIsMainBackend": true, 
+  "existdb": { 
+    "host": "existdb-for-lime",
+    "port": 8080,
+    "rest": "/exist/rest",
+    "baseCollection": "/lime_test",
+    "auth": "admin:"
+  },
+  "abiword": {
+    "path": "/usr/bin/abiword" 
+  }
+}

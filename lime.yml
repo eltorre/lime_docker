@@ -1,0 +1,26 @@
+version: '2'
+
+#Define a network so all containers can find each other
+networks:
+  lime-network:
+
+services:
+  mongodb-for-lime:
+    container_name: mongodb-for-lime
+    image: mongo:latest
+    networks:
+      - lime-network
+    
+  existdb-for-lime:
+    container_name: existdb-for-lime
+    image: evolvedbinary/exist-db:eXist-3.6.1-minimal
+    networks:
+      - lime-network
+
+  lime: 
+    image: lime:latest
+    ports: 
+      - 8008:80
+      - 9006:9006
+    networks:
+      - lime-network
