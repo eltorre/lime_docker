@@ -8,7 +8,7 @@ Docker container for [LIME](https://github.com/cirsfid-unibo/lime).
 * Once the build process is complete, run `docker-compose -f lime.yml up`
 * LIME will be available in `localhost:8008` 
 
-###Tested with:
+### Tested with:
 #### Ubuntu 16.04 && 14.04
 * Docker version 1.13.1
 * docker-compose version 1.8.0
