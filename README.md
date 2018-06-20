@@ -16,9 +16,10 @@ Docker container for [LIME](https://github.com/cirsfid-unibo/lime).
 #### Docker Toolbox on Windows 7
 * Be sure to checkout without forcing CRLF (e.g. ` git clone ... core.autocrlf false`)
   * You can also use dos2unix in the Docker Quickstart Terminal to revert the CRLF 
-* If you make changes to any file, either
+* If you make changes to any file (such as `config.lime.json`), either
   * Use vim from the Docker Quickstart Terminal
   * Use notepad (or other Windows based tool) then dos2unix in the Docker Quickstart Terminal to revert the CRLF
+* `localhost` will not work if using Docker Toolbox. Instead, you should use `192.168.99.100` both in `config.lime.json` and in the browser.
 
 #### Docker for Windows
 Untested, but I expect it to work. If you can confirm this, please tell me.
