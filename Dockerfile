@@ -43,8 +43,6 @@ RUN mkdir /limebuild && cd /limebuild && \
 	git clone --recursive https://github.com/cirsfid-unibo/lime.git && \
 	mv lime/* .
 
-COPY config.lime.json           /limebuild/config.json
-
 RUN	cd /limebuild && \
 	cd scripts && \
 	 npm install && \

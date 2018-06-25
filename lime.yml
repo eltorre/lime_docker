@@ -24,3 +24,5 @@ services:
       - 9006:9006
     networks:
       - lime-network
+    environment:
+      NODE: "your-url-here:9006"
