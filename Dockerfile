@@ -47,7 +47,9 @@ RUN	cd /limebuild && \
 	cd scripts && \
 	 npm install && \
 	cd .. && \
-	/sencha/Sencha/Cmd/5.1.3.61/sencha app build
+	/sencha/Sencha/Cmd/5.1.3.61/sencha app build && \
+	echo "" > /limebuild/config.json
+
 
 # Replace /var/www/html with lime
 RUN rm -rf /var/www/html && \
